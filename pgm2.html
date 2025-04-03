@@ -1,0 +1,28 @@
+<html>
+<script>
+function pincodevalidation()
+{
+var pincode=f1.pin.value;
+var check=/^[0-9]{6}$/;
+if(check.test(pincode))
+{
+alert("VALID PINCODE");
+}
+else
+{
+alert("INVALID PINCODE");
+}
+}
+</script>
+<body>
+<form name="f1">
+<label>
+ENTER PINCODE
+</label>
+<br>
+<input type="text" name="pin" maxlength="6">
+<br>
+<input type="submit" value="PIN VALIDATION" onclick="pincodevalidation()">
+</form>
+</body>
+</html>
